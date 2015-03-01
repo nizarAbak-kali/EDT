@@ -9,7 +9,17 @@ var Enseigant =  {
     prenom :"",
     date_naissance :"",
     //je vois pas ce que c'est ?
-    grade :""
+    grade :"",
+    
+    init:function (id,n,p,d,g){
+        this.id_enseignant = id ;
+        this.nom = n;
+        this.prenom = p;
+        this.date_naissance = d ;
+        this.grade = g;
+    }
+    
+    
 };
 
 function Enseigant(id,n,p,d,g){

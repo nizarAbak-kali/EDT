@@ -11,7 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="index.css">
         <script type="text/javascript" src="Etudiant.js" ></script>
-        
+
     </head>
     <body>
         <h1>PARTIE POUR LES TEST JS</h1>
@@ -21,7 +21,7 @@ and open the template in the editor.
             </p>
             <FORM NAME="form1">
                 <INPUT TYPE="text" NAME="input" VALUE="donne un nom" >
-                <INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="controle(form1)">
+                <INPUT TYPE="button" NAME="bouton" VALUE="Contrôler" onClick="test(form1)">
             </FORM>
         </div>
 
@@ -35,20 +35,38 @@ and open the template in the editor.
         <div>
             <h4>
                 Emploie Du Temps
-                
-                
             </h4>
-            
+            Entrez votre choix : 
+            <FORM NAME="form2"> 
+                <INPUT TYPE="CHECKBOX" NAME="check1" VALUE="ON" >Choix numéro 1<BR> 
+                <INPUT TYPE="CHECKBOX" NAME="check1" VALUE="2">Choix numéro 2<BR> 
+                <INPUT TYPE="CHECKBOX" NAME="check1" VALUE="3">Choix numéro 3<BR> 
+                <INPUT TYPE="CHECKBOX" NAME="check1" VALUE="4">Choix numéro 4<BR> 
+                <INPUT TYPE="button" NAME="but" VALUE="Corriger" onClick=""> 
+            </FORM>
+                
         </div>
-        
 
-        
+
+
 
         <script type="text/javascript">
-            function test() {
-            alert("Bouton appuyé !");
+            function test(form) {
+                var et1 =  Etudiant;
+                var et2 = Etudiant ;
+                et1.affiche();
+                nom = document.forms[0].input.value;
+                alert(nom);
+                et1.setnom(nom);
+                et1.affiche();
+                et2.setnom(nom+1);
+                et2.affiche()
+                
             }
             
+            function testCheckbox(form){
+                
+        }
         </script>
-</body>
+    </body>
 </html>

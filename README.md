@@ -20,3 +20,4 @@ http://openclassrooms.com/courses/dynamisez-vos-sites-web-avec-javascript/manipu
 http://openclassrooms.com/courses/dynamisez-vos-sites-web-avec-javascript/les-objets-5
 https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Le_mod%C3%A8le_objet_JavaScript_en_d%C3%A9tails
 
+TODO: Refactoring complet tout effacer et tout refaire c'est de la MERDE.
